@@ -1,0 +1,7 @@
+<div data-sly-include="/libs/wcm/core/components/init/init.jsp"></div> 
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/> 
+<sly data-sly-call="${clientlib.css @ categories='myproject.components'}"/> 
+<sly data-sly-call="${clientlib.js @ categories='myproject.components'}"/> 
+<section data-sly-include="/libs/foundation/global.jsp"></section> 
+<h1>${properties.jcr:title}</h1> 
+<div data-sly-resource="${@path='par',resourceType='wcm/foundation/components/parsys'}"></div>
